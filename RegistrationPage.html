@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RayReady Solar - Consultation / Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #1D3557;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 28px;
+            letter-spacing: 1.5px;
+            font-weight: 300;
+        }
+        .nav {
+            background-color: #457B9D;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .nav li {
+            margin: 0 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        .nav a:hover, .nav a.active {
+            background-color: #26465d;
+        }
+        .main-content {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1D3557;
+            border-bottom: 2px solid #1e3870;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #1D3557;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 18px;
+            border-radius: 6px;
+            border: 2px solid #ccc;
+            font-size: 15px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .btn-submit {
+            width: 100%;
+            background-color: #1D3557;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #396de6;
+        }
+        .footer {
+            background-color: #1D3557;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="header">SOLAR ENERGY DIY INSTALLATION</div>
+
+<nav class="nav">
+    <ul>
+        <li><a href="file:///C:/Users/kadam/OneDrive/Documents/index.html" class="active">Home</a></li>
+        <li><a href="AboutUsPage.html"class="active">About Us</a></li>
+        <li><a href="MissionPage.html"class="active">Our Mission</a></li>
+        <li><a href="BenefitsPage.html"class="active">Benefits</a></li>
+        <li><a href="file:///C:/Users/kadam/OneDrive/Documents/RegistrationPage.html" class="active">Register</a></li>
+        <li><a href="CostPage.html"class="active">Cost Analysis</a></li>
+        <li><a href="sdg-draft.html"class="active">SDG Mapping</a></li>
+        <li><a href="ContactUsPage.html"class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="main-content">
+    <h2>Solar Consultation / Registration Form</h2>
+
+    <form onsubmit="showMsg(); return false;">
+
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email Address:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number:</label>
+        <input type="text" placeholder="Enter your phone number" required>
+
+        <label>City / State:</label>
+        <input type="text" placeholder="Enter your location" required>
+
+        <label>Property Type:</label>
+        <select required>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Industrial</option>
+            <option>Farmhouse / Rural</option>
+        </select>
+
+        <label>Roof Type:</label>
+        <select required>
+            <option>Flat Roof</option>
+            <option>Sloped Roof</option>
+            <option>Metal / Tin Roof</option>
+            <option>Tile Roof</option>
+            <option>Not Sure</option>
+        </select>
+
+        <label>Preferred Service:</label>
+        <select required>
+            <option>DIY Solar Kit Installation</option>
+            <option>Full Professional Installation</option>
+            <option>Solar Maintenance Service</option>
+            <option>Energy Efficiency Audit</option>
+            <option>Consultation Only</option>
+        </select>
+
+        <label>Estimated Energy Consumption (kWh/month):</label>
+        <input type="number" placeholder="Enter approximate usage">
+
+        <label>Your Message / Requirements:</label>
+        <textarea placeholder="Describe your needs (optional)"></textarea>
+
+        <button type="submit" class="btn-submit">SUBMIT REQUEST</button>
+
+    </form>
+</div>
+
+<div class="footer">
+    Empowering Your Journey to Energy Independence | A Sustainable Future
+</div>
+
+<script>
+    function showMsg() {
+        alert("Thank you! Your consultation request has been submitted successfully.");
+    }
+</script>
+
+</body>
+</html>
